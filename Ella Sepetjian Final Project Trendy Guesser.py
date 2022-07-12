@@ -66,6 +66,33 @@ MyCatLabel = Label(Root, text = "My name is Catnip! What's yours?", font=("Comic
 MyCatLabel.configure(bg = "white")
 MyCatLabel.grid(row = 2, column = 1, sticky = "W")
 
+
+Python coding documentation to include at the top of our program
+#First, Last Name
+# Date
+# Brief description the python program 
+python coding description and solution requirements
+Create a python read_favorite_foods program so that the user can input four of their favorite foods into the reqiured_foods_file text file.
+The program needs to use a python lists,arrays,tuples and dictionaries to read and output the contents of the file.
+Reminder,remember to code, evaluate, save,excute(run), and check the python program for posiible errors.
+What we will submit:
+Filename and extension:read_favorite_foods.py
+Filename and extensions_favorite_foods_file.txt
+
+code:
+ print("Your First and Last Name")
+ print("26-07-2022")
+ print("This program will ask the user to enter four of his favorite food name\write it into the file\mthan prints the food name enterd by the user\n")
+file1=open("favorite_foods_file.txt", "W")
+
+print("Enter 4 of your favorite food names:"
+for i in range(4):
+      file1.Write(input())
+      file1.Write("\n")
+ file1.close()
+ file1=open("favorite_foods_file.txt","r+")
+
+
 # Input name
 InputName = Entry(Root, text = "Please enter your name.", font=("Comic Sans MS", 22))
 InputName.grid(row = 3, column = 1, sticky = "W")
