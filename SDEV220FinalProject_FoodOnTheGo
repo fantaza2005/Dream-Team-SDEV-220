@@ -126,7 +126,7 @@ class Donuts:
    print('Items you selected are')
    total=0
    for item in items: 
-       price=4
+       price=11
        if 'cake' in item:
            price=3
        elif 'yeast' in item:
