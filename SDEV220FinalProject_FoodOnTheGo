@@ -134,4 +134,4 @@ class Donuts:
       print(item+ '-$%.2f' % price)
       total += price
    
-  print('\nTotal price is $%.2f' % total
+  print('\nTotal price is $%.2f' % total)
