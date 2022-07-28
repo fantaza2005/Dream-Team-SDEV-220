@@ -111,26 +111,30 @@ class Donuts:
     self.type = type
     
     
-    # Write a python program that repeatedly prompts the user to enter a food  item until a null string is entered.
+    # Write a python program that repeatedly prompts the user to enter a donuts  item until a null string is entered.
     #An example interaction with the new app is given below
     
-    print('Enter food items list:')
+    print('Enter donuts items list:')
     
     items=[]
     while True:
-         food=input()
-        if len(food)==0:
+         donuts=input()
+        if len(donuts)==0:
            break
-       if food not in items:
-          items.append(food)
+       if donuts not in items:
+          items.append(donuts)
    print('Items you selected are')
    total=0
-   for item in items:
+   for item in items: 
        price=4
-       if 'burger' in item:
+       if 'cake' in item:
            price=3
-       elif 'donut' in item:
+       elif 'yeast' in item:
            price=2
+       if 'long john' in item:
+           price=2.5
+      elif 'bismark' in item:
+           price=3.5
       print(item+ '-$%.2f' % price)
       total += price
    
