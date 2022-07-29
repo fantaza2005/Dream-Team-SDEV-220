@@ -129,6 +129,105 @@ class Donuts:
     self.type = type
     
     
+    ### This is the deepskyblue app with the menue ##
+    
+    
+    
+from tkinter import Tk,Frame,Label
+from tkinter import *
+from PIL import ImageTk, Image
+from PIL import Image
+from tkinter import *
+
+tk=Tk()
+
+tk.geometry('650x400')
+tk.title('Food on the Go')
+tkfrm=Frame(tk,bg='deepskyblue')
+tkfrm.pack(fill='both',expand=True)
+
+label=Label(tkfrm,text="Dream Team's Restaurant",bg="white",fg="black",padx=5,pady=10)
+label.config(font=("Arial",20,'bold'))
+label.pack(fill="x",padx=150,pady=10)
+
+horizontal_frame=Frame(tkfrm,bg='deepskyblue')
+
+label1=Label(horizontal_frame,text="MENUE:",bg="WHITE",fg="BLACK",padx=30,pady=3)
+label1.grid(row=0,column=0,pady=10)
+label1=Label(horizontal_frame,text="FOOD:",bg="WHITE",fg="BLACK",padx=30,pady=3)
+label1.grid(row=0,column=1,padx=20,pady=10)
+label1=Label(horizontal_frame,text="DRINK:",bg="WHITE",fg="BLACK",padx=30,pady=3)
+label1.grid(row=0,column=2)
+
+horizontal_frame.grid_columnconfigure(0,weight=1)
+horizontal_frame.grid_columnconfigure(1,weight=1)
+horizontal_frame.grid_columnconfigure(2,weight=1)
+horizontal_frame.pack()
+
+horizontal_frame=Frame(tkfrm,bg='deepskyblue')
+
+label1=Label(horizontal_frame,text="MENUE:",bg="WHITE",fg="BLACK",padx=15,anchor='w')
+label1.grid(row=0,column=0,padx=10)
+label1=Label(horizontal_frame,text="FOOD: ",bg="WHITE",fg="BLACK",padx=15)
+label1.grid(row=1,column=0,padx=10)
+label1=Label(horizontal_frame,text="DRINK: ",bg="WHITE",fg="BLACK",padx=15)
+label1.grid(row=2,column=0,padx=5)
+
+horizontal_frame.grid_rowconfigure(0,weight=1)
+horizontal_frame.grid_rowconfigure(1,weight=1)
+horizontal_frame.grid_rowconfigure(2,weight=1)
+horizontal_frame.pack(fill='x',padx=20,pady=5)
+
+label1=Label(horizontal_frame,text="MENUE:",bg="WHITE",fg="BLACK",padx=5)
+label1.grid(row=0,column=1,padx=10)
+label1=Label(horizontal_frame,text="FOOD: ",bg="WHITE",fg="BLACK",padx=5)
+label1.grid(row=1,column=1,padx=100)
+label1=Label(horizontal_frame,text="DRINK: ",bg="WHITE",fg="BLACK",padx=5)
+label1.grid(row=2,column=1,padx=100)
+
+horizontal_frame.grid_rowconfigure(0,weight=1)
+horizontal_frame.grid_rowconfigure(1,weight=1)
+horizontal_frame.grid_rowconfigure(2,weight=1)
+
+horizontal_frame.pack(fill='x',padx=20,pady=5)
+
+label1=Label(horizontal_frame,text="MENUE:",bg="WHITE",fg="BLACK",padx=10)
+label1.grid(row=0,column=2,padx=100)
+label1=Label(horizontal_frame,text="FOOD: ",bg="WHITE",fg="BLACK",padx=10)
+label1.grid(row=1,column=2,padx=100)
+label1=Label(horizontal_frame,text="DRINK: ",bg="WHITE",fg="BLACK",padx=10)
+label1.grid(row=2,column=2,padx=100)
+
+horizontal_frame.grid_rowconfigure(0,weight=1)
+horizontal_frame.grid_rowconfigure(1,weight=1)
+horizontal_frame.grid_rowconfigure(2,weight=1)
+
+horizontal_frame.pack(fill='x',padx=70)
+
+horizontal_frame=Frame(tkfrm,bg='skyblue')
+label1=Label(horizontal_frame,text="Add to the order",bg="YELLOW",fg="BLACK",padx=10)
+label1.grid()
+horizontal_frame.pack(fill='x',padx=250,pady=50)
+
+horizontal_frame=Frame(tkfrm,bg='deepskyblue')
+label1=Label(horizontal_frame,text="Total:",bg="white",fg="BLACK",padx=10,anchor='w')
+label1.grid(row=0,column=0,pady=10)
+label1=Label(horizontal_frame,text=" ",bg="white",fg="BLACK",padx=10,anchor='sw')
+label1.grid(row=0,column=1,pady=10)
+horizontal_frame.grid_columnconfigure(0,weight=1)
+horizontal_frame.grid_columnconfigure(1,weight=1)
+horizontal_frame.pack(fill='x',padx=80,pady=20,side='bottom')
+
+tk.mainloop()
+
+    
+    
+    
+    
+    
+    
+    
+    
     # Write a python program that repeatedly prompts the user to enter a donuts  item until a null string is entered.
     #An example interaction with the new app is given below
     
