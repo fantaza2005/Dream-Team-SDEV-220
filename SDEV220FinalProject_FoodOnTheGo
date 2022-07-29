@@ -4,8 +4,11 @@
 # This project 
 
 # Importing Working module
+
+from tkinter import *
+from PIL import ImageTk, Image
+from PIL import Image
 from tkinter import * 
-from PIL import ImageTk,Image
 
 # User Account
 # - user sign in
@@ -62,6 +65,21 @@ MySpaceLabel.configure(bg = "deepskyblue")
 MySpaceLabel.grid(row = 1, column = 0)
 
 # Car picture  (For some reason it wasn't working for me)
+# the car image or picture sould be specified in pc.
+
+from PIL import ImageTk,Image
+from PIL import ImageTk, Image
+from PIL import Image
+im=Image.open("myimage.ipg")
+
+from PIL import ImageTk, Image
+from PIL import Image
+im=Image.open("myimage.ipg")# my image is found here ('/user/fanta/AppData/scene.jpg')
+imgTk = ImageTk.PhotoImage(image=PIL.Image.fromarray(file="car.PNG"))
+GameWindow.iconphoto(False, Image)
+
+
+
 #CarPic = PhotoImage(file = "car.PNG")
 #CarPic = Label(Root, text = "Car", image = car)
 #CarPic.grid(row = 6, column = 0)
@@ -100,36 +118,7 @@ def NewWindow():
 
     # Size of the window
     GameWindow.geometry("1000x515")
-    
-    
-    #Use Tkinter to create a simple GUI application with the following features:
-    
-    1. A button with a label of “Welcome Button”
-    2. A label that shows “Welcome to my first Python GUI App!” when the welcome button is pressed/pushed.
-    
-    
-    
-  from tkinter import *
-tkWindows = Tk()
-tkWindows.configure(background='deepskyblue')
-tkWindows.title('Welcome Windows')
-tkWindows.geometry('400x500+200+50')
-
-# displayMessage method show the message..
-def displayMessage():
-    Label(tkWindows,text='Welcome to my first Python GUI App!',bg= 'deepskyblue',font=('vardana',10,'bold')).place(x=70,y=40)
-
-# creating the button on the gui windows.
-Button(tkWindows,padx=10,pady=5,text='Welcome Button',fg='black',bd=8,bg='yellow',font=('vardana',10,'bold'),command = lambda:(displayMessage())).place(x=120,y=400)
-tkWindows.mainloop()
-    
-   
-     ## I got deepskyblue well come window button,please check it.
-     
-     
-     
-   
-   
+      
 # User Item Select
 # Define Classes (Start with donuts and add other later!)
 
